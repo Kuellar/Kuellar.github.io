@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/LandingPage.js"],"names":["LandingPage"],"mappings":"6HAAA,uBAMeA,UAJK,WAClB,OAAO","file":"static/js/3.aa73e0ad.chunk.js","sourcesContent":["import React from \"react\";\n\nconst LandingPage = () => {\n  return <p>TEST LANDINGPAGE</p>;\n};\n\nexport default LandingPage;\n"],"sourceRoot":""}
