@@ -1,2 +1,0 @@
-(this["webpackJsonpkuellar.github.io"]=this["webpackJsonpkuellar.github.io"]||[]).push([[3],{30:function(t,i,u){"use strict";u.r(i);u(0);var e=u(1);i.default=function(){return Object(e.jsx)("p",{children:"TEST LANDINGPAGE"})}}}]);
-//# sourceMappingURL=3.aa73e0ad.chunk.js.map
