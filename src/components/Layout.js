@@ -13,13 +13,16 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { styled, useTheme } from "@mui/material/styles";
 import Toolbar from "@mui/material/Toolbar";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import HomeIcon from "@mui/icons-material/Home";
 import PrintIcon from "@mui/icons-material/Print";
 import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import CodeIcon from "@mui/icons-material/Code";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
-
+import { useTranslation } from "react-i18next";
+import Switch from "@mui/material/Switch";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 import LandingPage from "../pages/LandingPage";
 import Impresiones from "../pages/Impresiones";
 import Ideas from "../pages/Ideas";
@@ -34,7 +37,7 @@ const drawerWidth = 240;
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
   ({ theme, open }) => ({
     flexGrow: 1,
-    padding: theme.spacing(3),
+    padding: 0,
     transition: theme.transitions.create("margin", {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -76,10 +79,64 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   justifyContent: "flex-end",
 }));
 
+const MaterialUISwitch = styled(Switch)(({ theme }) => ({
+  width: 60,
+  height: 34,
+  padding: "7px 9px 7px 15px",
+
+  "& .MuiSwitch-switchBase": {
+    margin: 0,
+    padding: 0,
+    transform: "translateX(8px)",
+    "&.Mui-checked": {
+      color: "#fff",
+      transform: "translateX(30px)",
+      "& + .MuiSwitch-track": {
+        width: "100%",
+        opacity: 1,
+        backgroundColor: "#8796A5",
+      },
+    },
+  },
+  "& .MuiSwitch-thumb": {
+    backgroundColor: "#002211",
+    width: 28,
+    height: 28,
+    marginTop: "3px",
+    "&:before": {
+      content: "''",
+      position: "absolute",
+      width: "100%",
+      height: "100%",
+      left: 0,
+      top: 0,
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
+    },
+  },
+  "& .MuiSwitch-track": {
+    width: "100%",
+    opacity: 1,
+    // marginLeft: "-12px",
+    backgroundColor: "#8796A5",
+    paddingLeft: 0,
+  },
+}));
+
 const Layout = ({ children }) => {
+  const { t, i18n } = useTranslation("common");
   const theme = useTheme();
   const [open, setOpen] = useState(false);
   const [page, setPage] = useState("LandingPage");
+  const [EnEs, setEnEs] = useState(true);
+
+  useEffect(() => {
+    if (EnEs) {
+      i18n.changeLanguage("es");
+    } else {
+      i18n.changeLanguage("en");
+    }
+  }, [EnEs, i18n]);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -89,21 +146,52 @@ const Layout = ({ children }) => {
     setOpen(false);
   };
 
+  const handleChangeEnEs = (event) => {
+    setEnEs(event.target.checked);
+  };
+
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar position="fixed" open={open}>
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            sx={{ mr: 2, ...(open && { display: "none" }) }}
+        <Grid container>
+          <Grid item xs={2}>
+            <Toolbar>
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                onClick={handleDrawerOpen}
+                edge="start"
+                sx={{ mr: 2, ...(open && { display: "none" }) }}
+              >
+                <MenuIcon />
+              </IconButton>
+            </Toolbar>
+          </Grid>
+          <Grid item xs></Grid>
+          <Grid
+            item
+            xs={2}
+            sx={{
+              flex: "inherit",
+              float: "right",
+              marginRight: "50px",
+              marginTop: "14px",
+              display: "inline-flex",
+            }}
           >
-            <MenuIcon />
-          </IconButton>
-        </Toolbar>
+            <Typography
+              variant="body1"
+              sx={{ marginTop: "5px", marginRight: "-5px" }}
+            >
+              EN
+            </Typography>
+            <MaterialUISwitch checked={EnEs} onChange={handleChangeEnEs} />
+            <Typography variant="body1" sx={{ marginTop: "5px" }}>
+              ES
+            </Typography>
+          </Grid>
+        </Grid>
       </AppBar>
       <Drawer
         sx={{
@@ -139,7 +227,7 @@ const Layout = ({ children }) => {
             <ListItemIcon>
               <HomeIcon />
             </ListItemIcon>
-            <ListItemText primary="Inicio" />
+            <ListItemText primary={t("menu.inicio")} />
           </ListItem>
           <ListItem
             button
@@ -151,7 +239,7 @@ const Layout = ({ children }) => {
             <ListItemIcon>
               <CodeIcon />
             </ListItemIcon>
-            <ListItemText primary="Proyectos" />
+            <ListItemText primary={t("menu.proyectos")} />
           </ListItem>
           <ListItem
             button
@@ -163,7 +251,7 @@ const Layout = ({ children }) => {
             <ListItemIcon>
               <PrintIcon />
             </ListItemIcon>
-            <ListItemText primary="Impresiones 3D" />
+            <ListItemText primary={t("menu.3d")} />
           </ListItem>
           <ListItem
             button
@@ -175,7 +263,7 @@ const Layout = ({ children }) => {
             <ListItemIcon>
               <LightbulbIcon />
             </ListItemIcon>
-            <ListItemText primary="Ideas" />
+            <ListItemText primary={t("menu.ideas")} />
           </ListItem>
           <ListItem
             button
@@ -186,7 +274,7 @@ const Layout = ({ children }) => {
             <ListItemIcon>
               <FileDownloadIcon />
             </ListItemIcon>
-            <ListItemText primary="Curriculum Vitae" />
+            <ListItemText primary={t("menu.cv")} />
           </ListItem>
         </List>
       </Drawer>
