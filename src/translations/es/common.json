@@ -9,5 +9,10 @@
   "lorem": {
     "1": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "2": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "landing": {
+    "foto-antigua": "Foto antigua",
+    "no-se": "No sé como hacer mi landing page",
+    "ayuda": "Ayuda"
   }
 }

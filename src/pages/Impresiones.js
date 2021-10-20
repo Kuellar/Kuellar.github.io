@@ -1,10 +1,10 @@
 import Typography from "@mui/material/Typography";
+import { useTranslation } from "react-i18next";
 import React from "react";
 
 const Impresiones = () => {
-  return (
-    <Typography>[Impresiones 3D] En construcción. Vuelve pronto :)</Typography>
-  );
+  const { t } = useTranslation("common");
+  return <Typography>{t("lorem.1")}</Typography>;
 };
 
 export default Impresiones;
