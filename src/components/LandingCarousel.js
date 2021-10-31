@@ -18,13 +18,6 @@ const LandingCarousel = () => {
               marginTop: -9,
             },
           }}
-          navButtonsWrapperProps={{
-            // Move the buttons to the bottom. Unsetting top here to override default style.
-            style: {
-              bottom: "0",
-              top: "unset",
-            },
-          }}
         >
           <Box>
             <img
@@ -48,13 +41,6 @@ const LandingCarousel = () => {
           indicatorContainerProps={{
             style: {
               marginTop: -9,
-            },
-          }}
-          navButtonsWrapperProps={{
-            // Move the buttons to the bottom. Unsetting top here to override default style.
-            style: {
-              bottom: "0",
-              top: "unset",
             },
           }}
           navButtonsAlwaysVisible={true}
