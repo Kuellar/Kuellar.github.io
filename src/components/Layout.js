@@ -133,6 +133,7 @@ const Layout = ({ children }) => {
         <List>
           {menuItems.map((elem) => (
             <ListItem
+              key={elem.text}
               button
               onClick={() => {
                 setOpen(!open);
@@ -144,6 +145,7 @@ const Layout = ({ children }) => {
             </ListItem>
           ))}
           <ListItem
+            key="CV"
             button
             onClick={() => {
               setOpen(!open);
