@@ -1,6 +1,6 @@
 import React, { Suspense, StrictMode } from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { teal, orange } from "@mui/material/colors";
+import { blueGrey, grey } from "@mui/material/colors";
 import Layout from "./components/Layout";
 import LoadingPage from "./pages/LandingPage";
 import { I18nextProvider } from "react-i18next";
@@ -9,11 +9,8 @@ import common_es from "./translations/es/common.json";
 import common_en from "./translations/en/common.json";
 import "./styles.css";
 
-const theme = createTheme({
-  palette: {
-    primary: teal,
-    secondary: orange,
-  },
+export const ColorModeContext = React.createContext({
+  toggleColorMode: () => {},
 });
 
 i18next.init({
@@ -30,13 +27,37 @@ i18next.init({
 });
 
 function App() {
+  const [mode, setMode] = React.useState("light");
+  const colorMode = React.useMemo(
+    () => ({
+      toggleColorMode: () => {
+        setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
+      },
+    }),
+    []
+  );
+
+  const theme = React.useMemo(
+    () =>
+      createTheme({
+        palette: {
+          mode,
+          primary: blueGrey,
+          secondary: grey,
+        },
+      }),
+    [mode]
+  );
+
   return (
     <StrictMode>
       <I18nextProvider i18n={i18next}>
         <Suspense fallback={LoadingPage}>
-          <ThemeProvider theme={theme}>
-            <Layout />
-          </ThemeProvider>
+          <ColorModeContext.Provider value={colorMode}>
+            <ThemeProvider theme={theme}>
+              <Layout />
+            </ThemeProvider>
+          </ColorModeContext.Provider>
         </Suspense>
       </I18nextProvider>
     </StrictMode>

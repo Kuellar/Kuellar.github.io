@@ -4,13 +4,16 @@ import Grid from "@mui/material/Grid";
 import { useTranslation } from "react-i18next";
 import yo from "../images/yo-old.JPG";
 import { Typography } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 const LandingPage = () => {
   const { t } = useTranslation("common");
+  const theme = useTheme();
+
   return (
     <Fragment>
       <Box sx={{ flexGrow: 1 }}>
-        <Grid container className="landingBackground">
+        <Grid container sx={{ background: theme.palette.secondary.dark }}>
           <Grid item xs />
           <Grid item xs={12} sm={6} md={5} lg={4} xl={3}>
             <img

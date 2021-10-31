@@ -13,7 +13,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { styled, useTheme } from "@mui/material/styles";
 import Toolbar from "@mui/material/Toolbar";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import HomeIcon from "@mui/icons-material/Home";
 import PrintIcon from "@mui/icons-material/Print";
 import LightbulbIcon from "@mui/icons-material/Lightbulb";
@@ -27,6 +27,9 @@ import LandingPage from "../pages/LandingPage";
 import Impresiones from "../pages/Impresiones";
 import Ideas from "../pages/Ideas";
 import Proyectos from "../pages/Proyectos";
+import { ColorModeContext } from "../App";
+import Brightness4Icon from "@mui/icons-material/Brightness4";
+import Brightness7Icon from "@mui/icons-material/Brightness7";
 
 // const LandingPage = React.lazy(() => import("../pages/LandingPage"));
 // const Impresiones = React.lazy(() => import("../pages/Impresiones"));
@@ -99,7 +102,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     },
   },
   "& .MuiSwitch-thumb": {
-    backgroundColor: "#002211",
+    backgroundColor: "#212121",
     width: 28,
     height: 28,
     marginTop: "3px",
@@ -129,6 +132,8 @@ const Layout = ({ children }) => {
   const [open, setOpen] = useState(false);
   const [page, setPage] = useState("LandingPage");
   const [EnEs, setEnEs] = useState(true);
+
+  const colorMode = useContext(ColorModeContext);
 
   useEffect(() => {
     if (EnEs) {
@@ -190,6 +195,17 @@ const Layout = ({ children }) => {
             <Typography variant="body1" sx={{ marginTop: "5px" }}>
               ES
             </Typography>
+            <IconButton
+              sx={{ ml: 2, paddingTop: 0, mb: 1 }}
+              onClick={colorMode.toggleColorMode}
+              color="inherit"
+            >
+              {theme.palette.mode === "dark" ? (
+                <Brightness7Icon />
+              ) : (
+                <Brightness4Icon />
+              )}
+            </IconButton>
           </Grid>
         </Grid>
       </AppBar>

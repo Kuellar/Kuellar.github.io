@@ -2,8 +2,3 @@
     margin-top: 8px;
     max-width: 100%;
 }
-
-.landingBackground {
-    background: rgb(128,128,128);
-    background: linear-gradient(90deg, rgba(128,128,128,1) 0%, rgba(0,150,136,0.1) 50%, rgba(128,128,128,1) 100%);
-}
