@@ -176,7 +176,7 @@ const Layout = ({ children }) => {
           <Grid item xs></Grid>
           <Grid
             item
-            xs={2}
+            xs={4}
             sx={{
               flex: "inherit",
               float: "right",
