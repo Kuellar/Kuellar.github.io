@@ -1,9 +1,9 @@
-import React, { Fragment } from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import { useTranslation } from "react-i18next";
-import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
+import Typography from "@mui/material/Typography";
+import React, { Fragment } from "react";
+import { useTranslation } from "react-i18next";
 import LandingCarousel from "../components/LandingCarousel";
 
 const LandingPage = () => {
