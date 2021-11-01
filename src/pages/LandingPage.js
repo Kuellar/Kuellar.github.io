@@ -21,7 +21,15 @@ const LandingPage = () => {
       >
         <Grid container sx={{ background: theme.palette.secondary.dark }}>
           <Grid item xs />
-          <Grid item xs={12} sm={10} md={8} lg={6} xl={4}>
+          <Grid
+            item
+            xs={12}
+            sm={10}
+            md={8}
+            lg={6}
+            xl={4}
+            // sx={{ height: "120px" }}
+          >
             <LandingCarousel />
           </Grid>
           <Grid item xs />
