@@ -23,10 +23,10 @@ const LandingPage = () => {
           <Grid item xs />
           <Grid
             item
-            xs={12}
-            sm={10}
-            md={8}
-            lg={6}
+            xs={11}
+            sm={8}
+            md={7}
+            lg={5}
             xl={4}
             // sx={{ height: "120px" }}
           >
