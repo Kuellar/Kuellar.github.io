@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/styles.css"],"names":[],"mappings":"AAAA,cACI,cAAe,CACf,cACJ","file":"main.b1cd3bd7.chunk.css","sourcesContent":[".landingPhoto {\n    margin-top: 8px;\n    max-width: 100%;\n}\n"]}
