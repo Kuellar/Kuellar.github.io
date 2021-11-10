@@ -37,13 +37,13 @@ const LandingPage = () => {
       </Box>
       <Box sx={{ flexGrow: 1 }}>
         <Grid container>
-          <Grid item md={2} />
-          <Grid item>
+          <Grid item sm={1} md={2} />
+          <Grid item xs={12} sm={10} md={8}>
             <Typography variant="h5">Ignacio Cuellar Tapia</Typography>
             <Typography variant="body1">{t("landing.no-se")}.</Typography>
             <Typography variant="body1">{t("landing.ayuda")}.</Typography>
           </Grid>
-          <Grid item md={2} />
+          <Grid item sm={1} md={2} />
         </Grid>
       </Box>
     </Fragment>
