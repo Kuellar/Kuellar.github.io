@@ -27,6 +27,8 @@ i18next.init({
 });
 
 function App() {
+  // Dummy Comments
+
   const [mode, setMode] = React.useState("light");
   const colorMode = React.useMemo(
     () => ({
