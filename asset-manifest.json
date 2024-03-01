@@ -1,30 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.d7b94cb5.chunk.css",
-    "main.js": "/static/js/main.1c65c516.chunk.js",
-    "main.js.map": "/static/js/main.1c65c516.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.dbad9d36.js",
-    "runtime-main.js.map": "/static/js/runtime-main.dbad9d36.js.map",
-    "static/js/2.31d72a8b.chunk.js": "/static/js/2.31d72a8b.chunk.js",
-    "static/js/2.31d72a8b.chunk.js.map": "/static/js/2.31d72a8b.chunk.js.map",
-    "static/js/3.9f6d0b1e.chunk.js": "/static/js/3.9f6d0b1e.chunk.js",
-    "static/js/3.9f6d0b1e.chunk.js.map": "/static/js/3.9f6d0b1e.chunk.js.map",
+    "main.css": "/static/css/main.a6a8f619.css",
+    "main.js": "/static/js/main.3d8a2144.js",
+    "static/js/488.f787ceca.chunk.js": "/static/js/488.f787ceca.chunk.js",
+    "static/media/SoporteCatana1.JPG": "/static/media/SoporteCatana1.2c37cb989104038125f5.JPG",
+    "static/media/SoporteCatana2.JPG": "/static/media/SoporteCatana2.f5b329f4a6345e5137a5.JPG",
+    "static/media/ProfessionalCV.pdf": "/static/media/ProfessionalCV.7f21770453503c85e4bc.pdf",
+    "static/media/yo-nasa.JPG": "/static/media/yo-nasa.2c57ede5267584275213.JPG",
+    "static/media/yo-old.JPG": "/static/media/yo-old.045d078c6c91714d85ad.JPG",
+    "static/media/soporte.stl": "/static/media/soporte.9e39c8870e0eee525d76.stl",
+    "static/media/soporte-lateral.stl": "/static/media/soporte-lateral.34c75f565f16c5355d53.stl",
+    "static/media/soporte-centro.stl": "/static/media/soporte-centro.3fffcf154f1962a3d6f0.stl",
     "index.html": "/index.html",
-    "static/css/main.d7b94cb5.chunk.css.map": "/static/css/main.d7b94cb5.chunk.css.map",
-    "static/js/2.31d72a8b.chunk.js.LICENSE.txt": "/static/js/2.31d72a8b.chunk.js.LICENSE.txt",
-    "static/media/ProfessionalCV.f2a09e43.pdf": "/static/media/ProfessionalCV.f2a09e43.pdf",
-    "static/media/SoporteCatana1.2c37cb98.JPG": "/static/media/SoporteCatana1.2c37cb98.JPG",
-    "static/media/SoporteCatana2.f5b329f4.JPG": "/static/media/SoporteCatana2.f5b329f4.JPG",
-    "static/media/soporte-centro.3fffcf15.stl": "/static/media/soporte-centro.3fffcf15.stl",
-    "static/media/soporte-lateral.34c75f56.stl": "/static/media/soporte-lateral.34c75f56.stl",
-    "static/media/soporte.9e39c887.stl": "/static/media/soporte.9e39c887.stl",
-    "static/media/yo-nasa.2c57ede5.JPG": "/static/media/yo-nasa.2c57ede5.JPG",
-    "static/media/yo-old.045d078c.JPG": "/static/media/yo-old.045d078c.JPG"
+    "main.a6a8f619.css.map": "/static/css/main.a6a8f619.css.map",
+    "main.3d8a2144.js.map": "/static/js/main.3d8a2144.js.map",
+    "488.f787ceca.chunk.js.map": "/static/js/488.f787ceca.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.dbad9d36.js",
-    "static/js/2.31d72a8b.chunk.js",
-    "static/css/main.d7b94cb5.chunk.css",
-    "static/js/main.1c65c516.chunk.js"
+    "static/css/main.a6a8f619.css",
+    "static/js/main.3d8a2144.js"
   ]
 }
