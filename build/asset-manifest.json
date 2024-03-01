@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a6a8f619.css",
+    "main.js": "/static/js/main.3d8a2144.js",
+    "static/js/488.f787ceca.chunk.js": "/static/js/488.f787ceca.chunk.js",
+    "static/media/SoporteCatana1.JPG": "/static/media/SoporteCatana1.2c37cb989104038125f5.JPG",
+    "static/media/SoporteCatana2.JPG": "/static/media/SoporteCatana2.f5b329f4a6345e5137a5.JPG",
+    "static/media/ProfessionalCV.pdf": "/static/media/ProfessionalCV.7f21770453503c85e4bc.pdf",
+    "static/media/yo-nasa.JPG": "/static/media/yo-nasa.2c57ede5267584275213.JPG",
+    "static/media/yo-old.JPG": "/static/media/yo-old.045d078c6c91714d85ad.JPG",
+    "static/media/soporte.stl": "/static/media/soporte.9e39c8870e0eee525d76.stl",
+    "static/media/soporte-lateral.stl": "/static/media/soporte-lateral.34c75f565f16c5355d53.stl",
+    "static/media/soporte-centro.stl": "/static/media/soporte-centro.3fffcf154f1962a3d6f0.stl",
+    "index.html": "/index.html",
+    "main.a6a8f619.css.map": "/static/css/main.a6a8f619.css.map",
+    "main.3d8a2144.js.map": "/static/js/main.3d8a2144.js.map",
+    "488.f787ceca.chunk.js.map": "/static/js/488.f787ceca.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6a8f619.css",
+    "static/js/main.3d8a2144.js"
+  ]
+}
