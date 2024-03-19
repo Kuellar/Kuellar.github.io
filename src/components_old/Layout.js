@@ -17,10 +17,10 @@ import ListItemText from "@mui/material/ListItemText";
 import { styled, useTheme } from "@mui/material/styles";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import Ideas from "../pages/Ideas";
-import Impresiones from "../pages/Impresiones";
-import LandingPage from "../pages/LandingPage";
-import Proyectos from "../pages/Proyectos";
+import Ideas from "../pages_old/Ideas";
+import Impresiones from "../pages_old/Impresiones";
+import LandingPage from "../pages_old/LandingPage";
+import Proyectos from "../pages_old/Proyectos";
 import CV from "../ProfessionalCV.pdf";
 import Topbar from "./Topbar";
 

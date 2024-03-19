@@ -1,8 +1,8 @@
 import React, { Suspense, StrictMode } from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { blueGrey, grey } from "@mui/material/colors";
-import Layout from "./components/Layout";
-import LoadingPage from "./pages/LandingPage";
+import Layout from "./components_old/Layout";
+import LoadingPage from "./pages_old/LandingPage";
 import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";
 import common_es from "./translations/es/common.json";

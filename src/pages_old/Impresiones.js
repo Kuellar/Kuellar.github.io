@@ -3,7 +3,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import CatanaSupport from "../components/3D/CatanaSupport";
+import CatanaSupport from "../components_old/3D/CatanaSupport";
 
 const Impresiones = () => {
   const { t } = useTranslation("common");

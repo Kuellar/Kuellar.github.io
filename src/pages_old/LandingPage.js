@@ -4,7 +4,7 @@ import { useTheme } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import React, { Fragment } from "react";
 import { useTranslation } from "react-i18next";
-import LandingCarousel from "../components/LandingCarousel";
+import LandingCarousel from "../components_old/LandingCarousel";
 
 const LandingPage = () => {
   const { t } = useTranslation("common");
