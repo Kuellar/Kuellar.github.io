@@ -10,12 +10,7 @@ import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 const Education = () => {
   return (
     <Fragment>
-      <Box
-        maxWidth={800}
-        // display="flex"
-        margin="auto"
-        paddingY={3}
-      >
+      <Box maxWidth={800} margin="auto" paddingY={3}>
         <Typography variant="h5" gutterBottom>
           <b>Educación</b>
         </Typography>

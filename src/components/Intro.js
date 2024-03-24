@@ -24,7 +24,6 @@ const Intro = () => {
         alignItems="center"
         margin="auto"
       >
-        {/* <CellularNoise /> */}
         <Grid container spacing={2}>
           <Grid item xs={4}>
             <Avatar
