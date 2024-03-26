@@ -1,17 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.a6a8f619.css",
-    "main.js": "/static/js/main.9b8b3ae1.js",
+    "main.js": "/static/js/main.050c340c.js",
     "static/js/488.f787ceca.chunk.js": "/static/js/488.f787ceca.chunk.js",
+    "static/media/voidseeker.webp": "/static/media/voidseeker.d461ab54ec84629e9b93.webp",
     "static/media/yo-nasa.JPG": "/static/media/yo-nasa.2c57ede5267584275213.JPG",
     "static/media/yo-old.JPG": "/static/media/yo-old.045d078c6c91714d85ad.JPG",
+    "static/media/ProfessionalCV.pdf": "/static/media/ProfessionalCV.f6d3f72dbd3ee403c1e7.pdf",
+    "static/media/cellularnoise.webp": "/static/media/cellularnoise.dc1a322d3d4cae99f8f9.webp",
+    "static/media/profile.webp": "/static/media/profile.d134ce214f8d8869e245.webp",
+    "static/media/enlistapp.webp": "/static/media/enlistapp.92d148b4b464de5a2940.webp",
     "index.html": "/index.html",
     "main.a6a8f619.css.map": "/static/css/main.a6a8f619.css.map",
-    "main.9b8b3ae1.js.map": "/static/js/main.9b8b3ae1.js.map",
+    "main.050c340c.js.map": "/static/js/main.050c340c.js.map",
     "488.f787ceca.chunk.js.map": "/static/js/488.f787ceca.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a6a8f619.css",
-    "static/js/main.9b8b3ae1.js"
+    "static/js/main.050c340c.js"
   ]
 }
