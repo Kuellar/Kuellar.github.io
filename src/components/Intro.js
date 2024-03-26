@@ -27,12 +27,14 @@ const Intro = () => {
         <Grid container marginX="auto">
           <Grid
             item
-            paddingLeft={1}
-            paddingBottom={1}
             xs={12}
             sm={4}
             md={4}
-            sx={{ marginRight: { sm: "25px" } }}
+            sx={{
+              marginRight: { sm: "25px" },
+              paddingBottom: { xs: 4, sm: 0 },
+              paddingLeft: { xs: 0, sm: 1 },
+            }}
           >
             <Avatar
               alt="Foto perfil"
@@ -41,10 +43,16 @@ const Intro = () => {
                 width: 200,
                 height: 200,
                 boxShadow: "0 0 1px 10px #151f2e",
+                marginX: { xs: "auto", sm: 0 },
               }}
             />
           </Grid>
-          <Grid item alignItems="center" marginY="auto">
+          <Grid
+            item
+            alignItems="center"
+            marginY="auto"
+            sx={{ marginX: { xs: "auto", sm: 0 } }}
+          >
             <Typography variant="h4" gutterBottom>
               <b>Ignacio Cuellar Tapia</b>
             </Typography>
