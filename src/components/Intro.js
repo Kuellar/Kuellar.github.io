@@ -18,14 +18,22 @@ const Intro = () => {
   return (
     <Fragment>
       <Box
-        height={300}
+        sx={{ height: { sm: 300 }, paddingBottom: { xs: 3, sm: 0 } }}
         maxWidth={800}
         display="flex"
         alignItems="center"
         margin="auto"
       >
-        <Grid container spacing={2}>
-          <Grid item xs={4}>
+        <Grid container marginX="auto">
+          <Grid
+            item
+            paddingLeft={1}
+            paddingBottom={1}
+            xs={12}
+            sm={4}
+            md={4}
+            sx={{ marginRight: { sm: "25px" } }}
+          >
             <Avatar
               alt="Foto perfil"
               src={photo}
