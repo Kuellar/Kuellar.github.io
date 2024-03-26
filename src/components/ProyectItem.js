@@ -12,9 +12,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 const ProjectItem = ({ title, description, photo, icons, github, link }) => {
   return (
-    <Grid container marginBottom={3}>
-      <Grid xs={6}>
-        <Box paddingRight={5}>
+    <Grid container sx={{ marginBottom: { xs: 6, md: 3 } }}>
+      <Grid xs={12} md={6} sx={{ marginBottom: { xs: 1, md: 0 } }}>
+        <Box sx={{ padding: { sm: 2, md: 0 }, paddingRight: { md: 5 } }}>
           <img
             src={photo}
             alt="Cellular noise project"
