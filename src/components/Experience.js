@@ -6,22 +6,21 @@ import Divider from "@mui/material/Divider";
 const Experience = () => {
   return (
     <Fragment>
-      <Box
-        maxWidth={800}
-        // display="flex"
-        margin="auto"
-        paddingY={3}
-      >
+      <Box maxWidth={800} margin="auto" paddingY={3}>
         <Typography variant="h5" gutterBottom>
           <b>Experiencia</b>
         </Typography>
 
         <Box marginBottom={4}>
-          <Box display="flex" alignItems="center">
+          <Box alignItems="center" sx={{ display: { sm: "flex" } }}>
             <Typography variant="h6">
               <b>Práctica profesional II</b>
             </Typography>
-            <Typography variant="h6" marginX={1}>
+            <Typography
+              variant="h6"
+              marginX={1}
+              sx={{ display: { xs: "none", sm: "block" } }}
+            >
               &#x2022;
             </Typography>
             <Typography variant="h6" fontSize={16}>
@@ -41,11 +40,15 @@ const Experience = () => {
         </Box>
 
         <Box>
-          <Box display="flex" alignItems="center">
+          <Box alignItems="center" sx={{ display: { sm: "flex" } }}>
             <Typography variant="h6">
               <b>Práctica profesional I</b>
             </Typography>
-            <Typography variant="h6" marginX={1}>
+            <Typography
+              variant="h6"
+              marginX={1}
+              sx={{ display: { xs: "none", sm: "block" } }}
+            >
               &#x2022;
             </Typography>
             <Typography variant="h6" fontSize={16}>

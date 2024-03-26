@@ -16,11 +16,15 @@ const Education = () => {
         </Typography>
 
         <Box marginBottom={4}>
-          <Box display="flex" alignItems="center">
+          <Box alignItems="center" sx={{ display: { sm: "flex" } }}>
             <Typography variant="h6">
               <b>Ingeniería Civil en Computación</b>
             </Typography>
-            <Typography variant="h6" marginX={1}>
+            <Typography
+              variant="h6"
+              marginX={1}
+              sx={{ display: { xs: "none", sm: "block" } }}
+            >
               &#x2022;
             </Typography>
             <Typography variant="h6" fontSize={16}>
@@ -32,7 +36,7 @@ const Education = () => {
         </Box>
 
         <Box>
-          <Box display="flex" alignItems="center">
+          <Box alignItems="center" sx={{ display: { sm: "flex" } }}>
             <Typography variant="h6">
               <Link
                 href="https://www.credential.net/c7d67864-7988-4be8-a41e-45c7f1c88e2f#gs.68ouf3"
@@ -43,19 +47,29 @@ const Education = () => {
                 <b>DevOps</b>
               </Link>
             </Typography>
-            <Typography variant="h6" marginX={1}>
+            <Typography
+              variant="h6"
+              marginX={1}
+              sx={{ display: { xs: "none", sm: "block" } }}
+            >
               &#x2022;
             </Typography>
-            <Typography variant="h6" fontSize={16} marginRight={1}>
-              <b>University of Chicago</b>
-            </Typography>
-            <IconButton
-              color="#dde4e7"
-              href="https://www.credential.net/c7d67864-7988-4be8-a41e-45c7f1c88e2f#gs.68ouf3"
-              target="_blank"
+            <Box
+              alignItems="center"
+              display="flex"
+              sx={{ marginTop: { xs: "-8px", sm: 0 } }}
             >
-              <OpenInNewIcon sx={{ color: "#dde4e7" }} />
-            </IconButton>
+              <Typography variant="h6" fontSize={16}>
+                <b>University of Chicago</b>
+              </Typography>
+              <IconButton
+                color="#dde4e7"
+                href="https://www.credential.net/c7d67864-7988-4be8-a41e-45c7f1c88e2f#gs.68ouf3"
+                target="_blank"
+              >
+                <OpenInNewIcon sx={{ color: "#dde4e7" }} />
+              </IconButton>
+            </Box>
           </Box>
 
           <Typography variant="caption">Octubre 2022</Typography>
